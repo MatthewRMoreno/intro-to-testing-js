@@ -1,4 +1,7 @@
 // helloWorld function 
-function helloWorld() {
+let helloWorld = function () {
     return "Hello, World!";
+}
+let sayHello = function () {
+
 }

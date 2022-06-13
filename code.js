@@ -2,6 +2,6 @@
 let helloWorld = function () {
     return "Hello, World!";
 }
-let sayHello = function () {
-    return ""
+let sayHello = function (input) {
+    return "Hello, " + input + "!";
 }

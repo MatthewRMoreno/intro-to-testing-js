@@ -9,3 +9,6 @@ let sayHello = function (input) {
         return "Hello, World!";
     }return "Hello, " + input + "!";
 }
+let isFive = function (input) {
+    return input === 5;
+}

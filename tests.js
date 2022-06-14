@@ -30,30 +30,50 @@ describe("sayHello",function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
     it("should return 'Hello, World!' when executed", function() {
-        expect(sayHello()).toBe("Hello, World!")
+        expect(sayHello()).toBe("Hello, World!");
     });
     it("should return 'Hello, World!' when executed", function() {
-        expect(sayHello(true)).toBe("Hello, World!")
+        expect(sayHello(true)).toBe("Hello, World!");
     });
     it("should return 'Hello, World!' when executed", function() {
-        expect(sayHello(false)).toBe("Hello, World!")
+        expect(sayHello(false)).toBe("Hello, World!");
     });
     it("should return 'Hello, World!' when executed", function() {
-        expect(sayHello(null)).toBe("Hello, World!")
+        expect(sayHello(null)).toBe("Hello, World!");
     });
     it("should return 'Hello, World!' when executed", function() {
-        expect(sayHello("")).toBe("Hello, World!")
+        expect(sayHello("")).toBe("Hello, World!");
     });
     it("should return 'Hello, World!' when executed", function() {
-        expect(sayHello(2.3)).toBe("Hello, World!")
+        expect(sayHello(2.3)).toBe("Hello, World!");
     });
     it("should return 'Hello, World!' when executed", function() {
-        expect(sayHello("5")).toBe("Hello, World!")
+        expect(sayHello("5")).toBe("Hello, World!");
     });
     it("should return 'Hello, World!' when executed", function() {
-        expect(sayHello([])).toBe("Hello, World!")
+        expect(sayHello([])).toBe("Hello, World!");
     });
     it("should return 'Hello, World!' when executed", function() {
-        expect(sayHello({})).toBe("Hello, World!")
+        expect(sayHello({})).toBe("Hello, World!");
     });
 });
+describe("isFive()", function() {
+    it("should be a defined function", function() {
+        expect(typeof isFive).toBe("function");
+    });
+    it("should return boolean when executed", function() {
+        expect(typeof isFive()).toBe("boolean");
+    });
+    it("should return false when executed", function() {
+        expect((isFive)()).toBe(false);
+    });
+    it("should not return undefined when executed", function() {
+        expect(isFive()).not.toBe(undefined);
+    });
+    it("should return true when 5 is executed", function() {
+        expect(isFive(5)).toBe(true);
+    })
+    it("should return false when '5' is executed", function () {
+        expect(isFive("5")).toBe(false)
+    })
+})

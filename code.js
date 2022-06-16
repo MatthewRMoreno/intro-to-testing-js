@@ -12,3 +12,12 @@ let sayHello = function (input) {
 let isFive = function (input) {
     return input === 5;
 }
+let isEven = function (input) {
+    return parseFloat(input) % 2 === 0;
+}
+let isVowel = function (input) {
+    return "aeiouAEIOU".indexOf(input) !== -1;
+}
+let add = function (value1, value2) {
+    return Number(value1) + Number(value2)
+}
